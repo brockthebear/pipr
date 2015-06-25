@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+fathers:
+  content: "one thing my dad taught me is you're only allowed to talk on the phone with another man for a max of one minute per year you've known them"
+  created_at: <%= 1.hour.ago %>
+  user: brock
+
+soda:
+  content: "wife is going on a trip this wknd so it's just me and the bays for 48hrs basically what i'm asking is how much do babies drink per day"
+  created_at: <%= 1.year.ago %>
+  user: hodor
+
+cousin:
+  content: "the maddest i've ever been in my life was when my cousin tried to convince me he jumped over the flagpole at the end of a level in super mario"
+  created_at: <%= 37.minutes.ago %>
+  user: brock
+
+pizza:
+  content: "What's the serving size for pizza? No, not in slices, in pizzas"
+  created_at: <%= 8.hours.ago %>
+  user: jesse
+
+drake:
+  content: "drake said 'text from a centerfold i ain't reply let her know i read it though' yo i gotta tear my arms off that's too high a level of brag"
+  created_at: <%= 87.days.ago %>
+  user: hodor
+
+startup:
+  content: "A dating service that matches you based on what you both need to binge on Netflix"
+  created_at: <%= Time.zone.now %>
+  user: walt
+
+bill:
+  content: "when the bill collector calls i answer it but i just play missy elliott into the phone i say it's more valuable than $$$ but they dont agree"
+  created_at: <%= 2.weeks.ago %>
+  user: lana
+  
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: hodor
+<% end %>
+
+
